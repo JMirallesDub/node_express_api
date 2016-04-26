@@ -1,0 +1,14 @@
+Step to connect to a local instance of MongoDB for CRUD operations.
+
+1. Create a data directory in the folder app. (mkdir data)
+2. Set the path lo local directory: mongod --dbpath /var/www/html/dev/node_express_api
+3. Open mongo: mongo and enter
+4. Inside of mongo type: mongod --dbpath /var/www/html/dev/node_express_api<enter>
+5. we'll see a lot of initandlisten
+6. In another CLI type mongo<enter>
+7. Then MongoDB say: connecting to: test.
+8. Thenk type: use bear. We'll see "switched to db bear"
+9. Type in server.js the connection to our local MongoDB: mongoose.connect('mongodb://localhost/bear');
+10. In this point we can run in CLI our server.js
+
+¢JoseMiralles
